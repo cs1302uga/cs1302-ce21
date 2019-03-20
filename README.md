@@ -43,55 +43,39 @@ command depends on your present working directory), then please note that contex
 
 1. The default size for the image in the ImageView container is 500x500. Do a quick google search for
    "500x500 images" and load one or two of the images to make sure the app is functioning properly.
-   
-1. Consider the following screenshot and associated containment heirarchy:
 
-   <table>
-   <tr>
-      <td> <img src="https://raw.githubusercontent.com/cs1302uga/cs1302-ce20/master/ScreenShotCP1.png?token=AAC_gNf5rZNVsCeD6PS7q7DA4YBrzcEiks5ck7mBwA%3D%3D"> </td>
-      <td><pre>                                                         --|
-                          Stage                               |
-                            |                                 |
-                          Scene                               |
-          |--               |                                 |
-          |                VBox                               |
-          |                 |                                 | Overall
-          |               /---\---------\                     | Containment
-   Scene  |              /     \         \                    | Hierarchy
-   Graph  |            HBox  ImageView  HBox                  |
-          |            / \               |                    |
-          |           /   \            /---\-----\            |
-          |    TextField  Button      /     \     \           |
-          |                      Button Button Button         |
-          |--                    /      /           \         |
-                            ImageView ImageView ImageView     |
-                                                            --|</code></td>
-   </tr>
-   </table>
+   The GUI should look like the following image:
+
+<img src="https://github.com/cs1302uga/cs1302-ce21/blob/master/ScreenShot.png?raw=true" width=300>
+
+1. Consider the following containment heirarchy:
+
+   ```
+                                        --|
+                         Stage            |
+                           |              |
+                         Scene            |
+          |--              |              |
+          |               VBox            | Overall
+          |               / \             | Containment
+   Scene  |              /   \            | Hierarchy
+   Graph  |            HBox  ImageView    |
+          |            / \                |
+          |           /   \               |
+          |    TextField  Button          |
+          |--                           --|
+   ```
    
    Each node corresponds to an object of some class under the 
    [`javafx`](https://docs.oracle.com/javase/8/javafx/api/toc.htm)
    package. The diagram for the scene graph assumes that child nodes
-   are added to their parents in a left-to-right order.
-   Here are some additional notes:
-   
-   * The three `ImageView` objects associated with the `Button` objects are not considered
-     part of the scene graph but are part of the overall containment hiearchy. These 
-     `ImageView` objects are associated with each `Button` object via the `Button` object's
-     `graphic` property. 
-   
-   * The icons for the associated images are contained in the `resources` directory 
-     provided with this exercise. 
-     
-   * The stage should NOT be resizable by the user via dragging the window corner.
-   
-1. Update your code so that it has the same scene graph and visual
-   appearance provided in the previous step. 
-   **Recompile before continuing.**
-   Also stage and commit your changes.
+   are added to their parents in a left-to-right order. For example,
+   the `HBox` and `ImageView` objects are added to the collection of
+   child nodes for the `VBox` object in that order.   
 
 1. If you completed the steps correctly, your app should look similar to
-   the screenshot provided above. Congratulations on a good looking app!
+   the screenshot provided above. Congratulations on compiling a good
+   looking app!
    
 **CHECKPOINT**
 
