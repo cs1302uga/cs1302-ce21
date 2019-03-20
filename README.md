@@ -82,7 +82,7 @@ command depends on your present working directory), then please note that contex
           |--              |                                   |
           |               VBox                                 |
           |                |\                                  |
-          |                | \-----------------\               |
+          |                | \------------------\              |
           |                |                    |              |
           |               VBox                 VBox            | Overall
           |               / \                  / \             | Containment
