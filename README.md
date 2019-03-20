@@ -67,9 +67,7 @@ command depends on your present working directory), then please note that contex
    
 ### Exercise Steps
 
-**CHECKPOINT**
-
-1. Now that you have your app looking good, let's make it do stuff. 
+1. Now that you have your app compiled, let's create a custom component.
 
 1. In the `start` method of your `ImageApp` class, declare a variable
    of type `EventHandler<ActionEvent>` called `loadHandler`, then assign
