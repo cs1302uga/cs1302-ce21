@@ -94,7 +94,23 @@ command depends on your present working directory), then please note that contex
           |--                                                --|
    ```
    
-   The 
+   In this scenario, there is a lot of work duplicated. Let's
+   instead denote the lower `VBox` sub-graphs as an `ImageLoader`,
+   a custom component that we will create in the next step:
+
+   ```
+                                                             --|
+                         Stage                                 |
+                           |                                   |
+                         Scene                                 |
+          |--              |                                   | Overall
+          |               VBox                                 | Containment
+   Scene  |                |\                                  | Hierarchy
+   Graph  |                | \------------------\              |
+          |                |                    |              |
+          |           ImageLoader          ImageLoader         |
+          |--                                                --|
+   ```
 
 1. In the `start` method of your `ImageApp` class, declare a variable
    of type `EventHandler<ActionEvent>` called `loadHandler`, then assign
