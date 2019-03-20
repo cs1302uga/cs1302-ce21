@@ -112,11 +112,12 @@ command depends on your present working directory), then please note that contex
           |--                                                --|
    ```
    
-1. ffff
+1. Now consider the sub-graph for the `ImageLoader` component that we
+   will create:
 
    ```
           |--
-          |     [ImageLoader is-a VBox]
+          |               VBox
           |               / \
    Sub-   |              /   \
    Graph  |            HBox  ImageView
@@ -125,7 +126,38 @@ command depends on your present working directory), then please note that contex
           |    TextField  Button
           |--
    ```
+   
+   Note that root of this sub-graph is a `VBox`. With this in mind, 
+   create a class called `ImageLoader` in the `cs1302.ce21` package
+   that extends the `VBox` class.
 
+   1. The class should contain the `static` constants from
+      the `ImageApp` class. The can be cut and paste directly
+	  from that class, perhaps changing them to `protected`
+	  visibility if you wish to do so.
+
+   1. Your class should have instance variables for the other
+      nodes in the sub-graph. For example, you will need
+	  an instance variable called `urlLayer` of type `HBox`
+	  as well as instance variables for the remaining nodes.
+	  For the most part, these can be cut and paste from the
+	  `ImageApp` class.
+	  
+   1. Your class should have a default constructor that explicitly
+      calls `super()`. After the call to `super`, the constructor
+	  should instantiate the other nodes and add them to the
+	  sub-graph rooted at `this` similarly to how they are 
+	  added to the `VBox` node in the `ImageApp` class. 
+	  For example, you might start by doing this:
+	  
+	  ```java
+	  public ImageLoader() {
+          super();
+          / instantiate other objects
+          this.getChildren().addAll(urlLayer, imgView);
+      } // ImageLoader
+	  ```
+	  
 1. In the `start` method of your `ImageApp` class, declare a variable
    of type `EventHandler<ActionEvent>` called `loadHandler`, then assign
    to it, using a lambda expression, an implementation of
