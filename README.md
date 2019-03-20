@@ -111,6 +111,20 @@ command depends on your present working directory), then please note that contex
           |           ImageLoader          ImageLoader         |
           |--                                                --|
    ```
+   
+1. ffff
+
+   ```
+          |--
+          |     [ImageLoader is-a VBox]
+          |               / \
+   Sub-   |              /   \
+   Graph  |            HBox  ImageView
+          |            / \
+          |           /   \
+          |    TextField  Button
+          |--
+   ```
 
 1. In the `start` method of your `ImageApp` class, declare a variable
    of type `EventHandler<ActionEvent>` called `loadHandler`, then assign
