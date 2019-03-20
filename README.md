@@ -42,7 +42,7 @@ command depends on your present working directory), then please note that contex
    to the app you created in class exercise 19.
 
 1. The default size for the image in the ImageView container is 500x500. Do a quick google search for
-   "500x500 images" and load one or two to make sure the app is functioning properly.
+   "500x500 images" and load one or two of the images to make sure the app is functioning properly.
    
 1. Consider the following screenshot and associated containment heirarchy:
 
