@@ -80,10 +80,10 @@ command depends on your present working directory), then please note that contex
                            |                                   |
                          Scene                                 |
           |--              |                                   |
- 	  |               VBox                                 |
- 	  |                |\                                  |
- 	  |                | \-----------------\               |
- 	  |                |                    |              |
+          |               VBox                                 |
+          |                |\                                  |
+          |                | \-----------------\               |
+          |                |                    |              |
           |               VBox                 VBox            | Overall
           |               / \                  / \             | Containment
    Scene  |              /   \                /   \            | Hierarchy
