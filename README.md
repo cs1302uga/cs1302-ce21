@@ -39,14 +39,33 @@ command depends on your present working directory), then please note that contex
 ### Exercise Steps
 
 1. Compile and run the provided code without any errors or warnings. The program should look very similar
-   to the app you created in class exercise 19.
+   to the app you created in class exercise 19. The containment hierarchy and corresponding image are below:
+   
+   <table>
+   <tr>
+      <td><img src="https://github.com/cs1302uga/cs1302-ce21/blob/master/ScreenShot.png?raw=true" width=300>
+      <td><pre><code>                                                --|
+                         Stage            |
+                           |              |
+                         Scene            |
+          |--              |              |
+          |               VBox            | Overall
+          |               / \             | Containment
+   Scene  |              /   \            | Hierarchy
+   Graph  |            HBox  ImageView    |
+          |            / \                |
+          |           /   \               |
+          |    TextField  Button          |
+          |--                           --|</code></pre></td>
+   </tr>
+   </table>
 
 1. The default size for the image in the ImageView container is 500x500. Do a quick google search for
    "500x500 images" and load one or two of the images to make sure the app is functioning properly.
 
    The GUI should look like the following image:
 
-<img src="https://github.com/cs1302uga/cs1302-ce21/blob/master/ScreenShot.png?raw=true" width=300>
+   <img src="https://github.com/cs1302uga/cs1302-ce21/blob/master/ScreenShot.png?raw=true" width=300>
 
 1. Consider the following containment heirarchy:
 
