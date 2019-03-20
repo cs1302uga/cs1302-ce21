@@ -68,6 +68,33 @@ command depends on your present working directory), then please note that contex
 ### Exercise Steps
 
 1. Now that you have your app compiled, let's create a custom component.
+   Up to this point, you've been using provided components such as
+   `TextField` and `ImageView`. In this next set of steps, we will 
+   walk you through the creation of a custom, reusable component based on
+   the set of existing components contained in the application.
+   Consider the following containment hieararchy:
+   
+   ```
+                                                             --|
+                         Stage                                 |
+                           |                                   |
+                         Scene                                 |
+          |--              |                                   |
+		  |               VBox                                 |
+		  |                |\                                  |
+		  |                | \-----------------\               |
+		  |                |                    |              |
+          |               VBox                 VBox            | Overall
+          |               / \                  / \             | Containment
+   Scene  |              /   \                /   \            | Hierarchy
+   Graph  |            HBox  ImageView      HBox  ImageView    |
+          |            / \                  / \                |
+          |           /   \                /   \               |
+          |    TextField  Button    TextField  Button          |
+          |--                                                --|
+   ```
+   
+   The 
 
 1. In the `start` method of your `ImageApp` class, declare a variable
    of type `EventHandler<ActionEvent>` called `loadHandler`, then assign
