@@ -36,15 +36,13 @@ command depends on your present working directory), then please note that contex
    $ find src
    ```
 
-### Exercise Steps
-
 1. Compile and run the provided code without any errors or warnings. The program should look very similar
-   to the app you created in class exercise 19. The containment hierarchy and corresponding image are below:
+   to the app you created in class exercise 19. See the overall containment heirarchy and image below:
    
    <table>
    <tr>
       <td><img src="https://github.com/cs1302uga/cs1302-ce21/blob/master/ScreenShot.png?raw=true" width=300>
-      <td><pre><code>                                                --|
+      <td><pre><code>                                     --|
                          Stage            |
                            |              |
                          Scene            |
@@ -63,39 +61,12 @@ command depends on your present working directory), then please note that contex
 1. The default size for the image in the ImageView container is 500x500. Do a quick google search for
    "500x500 images" and load one or two of the images to make sure the app is functioning properly.
 
-   The GUI should look like the following image:
-
-   <img src="https://github.com/cs1302uga/cs1302-ce21/blob/master/ScreenShot.png?raw=true" width=300>
-
-1. Consider the following containment heirarchy:
-
-   ```
-                                        --|
-                         Stage            |
-                           |              |
-                         Scene            |
-          |--              |              |
-          |               VBox            | Overall
-          |               / \             | Containment
-   Scene  |              /   \            | Hierarchy
-   Graph  |            HBox  ImageView    |
-          |            / \                |
-          |           /   \               |
-          |    TextField  Button          |
-          |--                           --|
-   ```
-   
-   Each node corresponds to an object of some class under the 
-   [`javafx`](https://docs.oracle.com/javase/8/javafx/api/toc.htm)
-   package. The diagram for the scene graph assumes that child nodes
-   are added to their parents in a left-to-right order. For example,
-   the `HBox` and `ImageView` objects are added to the collection of
-   child nodes for the `VBox` object in that order.   
-
 1. If you completed the steps correctly, your app should look similar to
    the screenshot provided above. Congratulations on compiling a good
    looking app!
    
+### Exercise Steps
+
 **CHECKPOINT**
 
 1. Now that you have your app looking good, let's make it do stuff. 
