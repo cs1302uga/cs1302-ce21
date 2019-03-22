@@ -118,15 +118,80 @@ command depends on your present working directory), then please note that contex
    Scene  |                    /|\                             | Hierarchy
    Graph  |          /--------/ | \--------\                   |
           |         /          / \          \                  |
-          |      ImageLoader  ... ...      ImageLoader         |
+          |      ImageLoader  /   \        ImageLoader         |
+          |                  /     \                           |
+          |        ImageLoader     ImageLoader                 |
           |--                                                --|
    ```
    
-1. 
+1. **Compile and run your code without any errors or warnings.**
+   Also stage and commit your changes.
    
-
-        
+1. Tag your commit so that it's easier to checkout at a later
+   point in time:
+   
+   ```
+   $ git tag tilepane
+   ```
+      
 **CHECKPOINT**
+
+1. Now, read the API documentation for the
+   [`TabPane`](https://docs.oracle.com/javase/8/javafx/api/javafx/scene/control/TabPane.html)
+   and [`Tab`](https://docs.oracle.com/javase/8/javafx/api/javafx/scene/control/Tab.html)
+   classes, then adapt your code to replace the `TilePane` in the 
+   containment hiearchy with a `TabPane` object.
+   
+   * The `TPane` object's `prefColumns` should be set to `4` using the appropriate setter
+     method.
+     
+   * The `TilePane` object should have four `ImageLoader` objects as its children.
+   
+   Here is the corresponding containment hierarchy for what is expected:
+   
+   ```
+                                                             --|
+                              Stage                            |
+                                |                              |
+                              Scene                            |
+          |--                   |                              | Overall
+          |                  TabPane                           | Containment
+   Scene  |                    /|\                             | Hierarchy
+   Graph  |          /--------/ | \--------\                   |
+          |        Tab          |          Tab                 |
+          |        /           / \           \                 |
+          |     ImageLoader  Tab Tab         ImageLoader       |
+          |                  /     \                           |
+          |        ImageLoader     ImageLoader                 |
+          |--                                                --|
+   ```
+   
+1. **Compile and run your code without any errors or warnings.**
+   Also stage and commit your changes.
+   
+1. Tag your commit so that it's easier to checkout at a later
+   point in time:
+   
+   ```
+   $ git tag tabpane
+   ```
+   
+**CHECKPOINT**  
+
+1. View the condensed, graphical version of your Git log.
+   Since you tagged each relevant commit with a name, you
+   can go back in time by checking out those commits more
+   easily. For example,
+   
+   ```
+   $ git checkout tutorial
+   $ rm -rf bin/*
+   ```
+   
+   Then, compile and run to see what your exercise looked like
+   at that point in time!
+
+**NOT A CHECKPOINT**
 
 <hr/>
 
