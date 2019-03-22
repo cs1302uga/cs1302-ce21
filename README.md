@@ -31,7 +31,7 @@ command depends on your present working directory), then please note that contex
 
 1. Change into the `cs1302-ce21` directory that was just created and look around. There is 
    pretty much nothing there! That's intentional. Continue on to the 
-   [Exercise Steps]() below.
+   [Exercise Steps](#exercise-steps) below.
    
 ### Exercise Steps
 
@@ -42,13 +42,51 @@ command depends on your present working directory), then please note that contex
    
 1. If you did not finish 
    [CSCI 1302 JavaFX Custom Component Tutorial](https://github.com/cs1302uga/cs1302-tutorials/components/components.md), 
-   then finish that work in the code you just copied over. 
+   then finish that work in the code you just copied over. The end goal is to reduce
+   the containment hierarchy from this:
+   
+   ```
+                                                             --|
+                         Stage                                 |
+                           |                                   |
+                         Scene                                 |
+          |--              |                                   |
+          |               HBox                                 |
+          |                |\                                  |
+          |                | \------------------\              |
+          |                |                    |              |
+          |               VBox                 VBox            | Overall
+          |               / \                  / \             | Containment
+   Scene  |              /   \                /   \            | Hierarchy
+   Graph  |            HBox  ImageView      HBox  ImageView    |
+          |            / \                  / \                |
+          |           /   \                /   \               |
+          |    TextField  Button    TextField  Button          |
+          |--                                                --|
+   ```   
+   
+   to something like this:
+   
+   ```
+                                                             --|
+                         Stage                                 |
+                           |                                   |
+                         Scene                                 |
+          |--              |                                   | Overall
+          |               HBox                                 | Containment
+   Scene  |                |\                                  | Hierarchy
+   Graph  |                | \------------------\              |
+          |                |                    |              |
+          |           ImageLoader          ImageLoader         |
+          |--                                                --|
+   ```
    
 1. **Compile and run your code without any errors or warnings.**
    Also stage and commit your changes.
-   
+
 **CHECKPOINT**   
 
+1. Read 
 
         
 **CHECKPOINT**
