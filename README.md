@@ -1,7 +1,7 @@
 # cs1302-ce21 Fun with Components and Containers
 
-> The only way to get rid of temptation is to yield to it.
-> **-- Oscar Wilde, _The Picture of Dorian Gray_**
+> Words, words, words.
+> **-- William Shakespeare, _Hamlet_**
 
 This class exercise explores creating custom JavaFX components by extending (inheriting from) existing
 JavaFX components. 
