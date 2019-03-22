@@ -141,11 +141,9 @@ command depends on your present working directory), then please note that contex
    and [`Tab`](https://docs.oracle.com/javase/8/javafx/api/javafx/scene/control/Tab.html)
    classes, then adapt your code to replace the `TilePane` in the 
    containment hiearchy with a `TabPane` object.
-   
-   * The `TPane` object's `prefColumns` should be set to `4` using the appropriate setter
-     method.
-     
-   * The `TilePane` object should have four `ImageLoader` objects as its children.
+    
+   * The `TabPane` object should have four `Tab` objects, each containing an `ImageLoader` object
+     as its child.
    
    Here is the corresponding containment hierarchy for what is expected:
    
