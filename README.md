@@ -82,14 +82,19 @@ command depends on your present working directory), then please note that contex
    
 1. **Compile and run your code without any errors or warnings.**
    Also stage and commit your changes.
-
-**CHECKPOINT**   
-
-1. Create and checkout a branch called `tilepane`:
+   
+1. Tag your commit so that it's easier to checkout at a later
+   point in time:
    
    ```
-   $ git checout -b tilepane
+   $ git tag tutorial
    ```
+   
+   [Tagging](https://git-scm.com/book/en/v2/Git-Basics-Tagging) allows us
+   to give the commit a more convenient name to a commit than its
+   hexademical checksum.
+
+**CHECKPOINT**   
    
 1. Now, read the API documentation for the
    [`TilePane`](https://docs.oracle.com/javase/8/javafx/api/javafx/scene/layout/TilePane.html)
