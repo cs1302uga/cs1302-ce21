@@ -30,7 +30,8 @@ command depends on your present working directory), then please note that contex
    ```
 
 1. Change into the `cs1302-ce21` directory that was just created and look around. There is 
-   pretty much nothing there! That's intentional. 
+   pretty much nothing there! That's intentional. Continue on to the 
+   [Exercise Steps]() below.
    
 ### Exercise Steps
 
