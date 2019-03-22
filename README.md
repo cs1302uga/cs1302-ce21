@@ -1,4 +1,4 @@
-# cs1302-ce21 Customizable Components
+# cs1302-ce21 Fun with Components and Containers
 
 > The only way to get rid of temptation is to yield to it.
 > **-- Oscar Wilde, _The Picture of Dorian Gray_**
@@ -85,7 +85,40 @@ command depends on your present working directory), then please note that contex
 
 **CHECKPOINT**   
 
-1. Read 
+1. Create and checkout a branch called `tilepane`:
+   
+   ```
+   $ git checout -b tilepane
+   ```
+   
+1. Now, read the API documentation for the
+   [`TilePane`](https://docs.oracle.com/javase/8/javafx/api/javafx/scene/layout/TilePane.html)
+   class, then adapt your code to replace the highest `HBox` in the 
+   containment hiearchy with a `TilePane` object.
+   
+   * The `TilePane` object's `prefColumns` should be set to `4` using the appropriate setter
+     method.
+     
+   * The `TilePane` object should have four `ImageLoader` objects as its children.
+   
+   Here is the corresponding containment hierarchy for what is expected:
+   
+   ```
+                                                             --|
+                              Stage                            |
+                                |                              |
+                              Scene                            |
+          |--                   |                              | Overall
+          |                 TilePane                           | Containment
+   Scene  |                    /|\                             | Hierarchy
+   Graph  |          /--------/ | \--------\                   |
+          |         /          / \          \                  |
+          |      ImageLoader  ... ...      ImageLoader         |
+          |--                                                --|
+   ```
+   
+1. 
+   
 
         
 **CHECKPOINT**
