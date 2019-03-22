@@ -10,6 +10,7 @@ JavaFX components.
 
 * [CSCI 1302 JavaFX 8 Bookmarks and Notes](http://cobweb.cs.uga.edu/~mec/cs1302/gui/)
 * [CSCI 1302 JavaFX Tutorial](https://github.com/cs1302uga/cs1302-tutorials/blob/master/javafx/javafx.md)
+* [CSCI 1302 JavaFX Custom Component Tutorial](https://github.com/cs1302uga/cs1302-tutorials/components/components.md)
 
 ## Questions
 
@@ -28,174 +29,26 @@ command depends on your present working directory), then please note that contex
    $ git clone --depth 1 https://github.com/cs1302uga/cs1302-ce21.git
    ```
 
-1. Change into the `cs1302-ce21` directory that was just created and look around. There should be
-   multiple Java files contained within the directory structure. To see a listing of all of the 
-   files under the `src` subdirectory, use the `find` command as follows:
-   
-   ```
-   $ find src
-   ```
-
-1. Compile and run the provided code without any errors or warnings. The program should look very similar
-   to the app you created in class exercise 19. See the overall containment heirarchy and image below:
-   
-   <table>
-   <tr>
-      <td><img src="https://github.com/cs1302uga/cs1302-ce21/blob/master/ScreenShot.png?raw=true" width=300>
-      <td><pre><code>                                     --|
-                         Stage            |
-                           |              |
-                         Scene            |
-          |--              |              |
-          |               VBox            | Overall
-          |               / \             | Containment
-   Scene  |              /   \            | Hierarchy
-   Graph  |            HBox  ImageView    |
-          |            / \                |
-          |           /   \               |
-          |    TextField  Button          |
-          |--                           --|</code></pre></td>
-   </tr>
-   </table>
-
-1. The default size for the image in the ImageView container is 500x500. Do a quick google search for
-   "500x500 images" and load one or two of the images to make sure the app is functioning properly.
-
-1. If you completed the steps correctly, your app should look similar to
-   the screenshot provided above. Congratulations on compiling a good
-   looking app!
+1. Change into the `cs1302-ce21` directory that was just created and look around. There is 
+   pretty much nothing there! That's intentional. 
    
 ### Exercise Steps
 
-1. Now that you have your app compiled, let's create a custom component.
-   Up to this point, you've been using provided components such as
-   `TextField` and `ImageView`. In this next set of steps, we will 
-   walk you through the creation of a custom, reusable component based on
-   the set of existing components contained in the application.
-   Consider the following containment hieararchy:
+1. Copy over your work from the `src/cs1302/gui` directory of `cs1302-components`
+   into the `src/cs1302/ce21` directory of `cs1302-ce21` and update the package
+   statements accordingly (i.e., make sure the package is `cs1302.ce21`). 
+   **You should create `src/cs1302/ce21` if it does not exist.**
    
-   ```
-                                                             --|
-                         Stage                                 |
-                           |                                   |
-                         Scene                                 |
-          |--              |                                   |
-          |               VBox                                 |
-          |                |\                                  |
-          |                | \------------------\              |
-          |                |                    |              |
-          |               VBox                 VBox            | Overall
-          |               / \                  / \             | Containment
-   Scene  |              /   \                /   \            | Hierarchy
-   Graph  |            HBox  ImageView      HBox  ImageView    |
-          |            / \                  / \                |
-          |           /   \                /   \               |
-          |    TextField  Button    TextField  Button          |
-          |--                                                --|
-   ```
+1. If you did not finish 
+   [CSCI 1302 JavaFX Custom Component Tutorial](https://github.com/cs1302uga/cs1302-tutorials/components/components.md), 
+   then finish that work in the code you just copied over. 
    
-   In this scenario, there is a lot of work duplicated. Let's
-   instead denote the lower `VBox` sub-graphs as an `ImageLoader`,
-   a custom component that we will create in the next step:
+1. **Compile and run your code without any errors or warnings.**
+   Also stage and commit your changes.
+   
+**CHECKPOINT**   
 
-   ```
-                                                             --|
-                         Stage                                 |
-                           |                                   |
-                         Scene                                 |
-          |--              |                                   | Overall
-          |               VBox                                 | Containment
-   Scene  |                |\                                  | Hierarchy
-   Graph  |                | \------------------\              |
-          |                |                    |              |
-          |           ImageLoader          ImageLoader         |
-          |--                                                --|
-   ```
-   
-1. Now consider the sub-graph for the `ImageLoader` component that we
-   will create:
 
-   ```
-          |--
-          |               VBox
-          |               / \
-   Sub-   |              /   \
-   Graph  |            HBox  ImageView
-          |            / \
-          |           /   \
-          |    TextField  Button
-          |--
-   ```
-   
-   Note that root of this sub-graph is a `VBox`. With this in mind, 
-   create a class called `ImageLoader` in the `cs1302.ce21` package
-   that extends the `VBox` class.
-
-   1. The class should contain the `static` constants from
-      the `ImageApp` class. The can be cut and paste directly
-	  from that class, perhaps changing them to `protected`
-	  visibility if you wish to do so.
-
-   1. Your class should have instance variables for the other
-      nodes in the sub-graph. For example, you will need
-	  an instance variable called `urlLayer` of type `HBox`
-	  as well as instance variables for the remaining nodes.
-	  For the most part, these can be cut and paste from the
-	  `ImageApp` class.
-	  
-   1. Your class should have a default constructor that explicitly
-      calls `super()`. After the call to `super`, the constructor
-	  should instantiate the other nodes and add them to the
-	  sub-graph rooted at `this` similarly to how they are 
-	  added to the `VBox` node in the `ImageApp` class. 
-	  For example, you might start by doing this:
-	  
-	  ```java
-	  public ImageLoader() {
-          super();
-          / instantiate other objects
-          this.getChildren().addAll(urlLayer, imgView);
-      } // ImageLoader
-	  ```
-	  
-1. In the `start` method of your `ImageApp` class, declare a variable
-   of type `EventHandler<ActionEvent>` called `loadHandler`, then assign
-   to it, using a lambda expression, an implementation of
-   `EventHandler<ActionEvent>` that prints out the text of the
-   `TextField` to standard output (i.e., the terminal).
-   **Recompile before continuing.**
-   
-   * Take special care that you import the correct `ActionEvent` class,
-     as a quick Internet search may recommend the wrong one!
-     Consult the 
-     [API Documentation](https://docs.oracle.com/javase/8/javafx/api/toc.htm) and 
-     [referenced bookmarks](http://cobweb.cs.uga.edu/~mec/cs1302/gui/)
-     to determine the import statements that are needed.
-     
-1. Once your app is able to print the text from the `TextField` to 
-   standard output, ammend the code that is also creates an `Image`
-   object using the supplied URL, then sets the `image` propery of
-   the `ImageView` using the appropriated setter method.
-   **Recompile before continuing.**
-   
-   * Here are some URLs to try when testing your program:
-   
-     * `http://cobweb.cs.uga.edu/~mec/cs1302/gui/pikachu.png`
-     * `http://cobweb.cs.uga.edu/~mec/cs1302/gui/brad.jpg`
-     * `http://cobweb.cs.uga.edu/~mec/cs1302/gui/SuccessKid.jpg`
-   
-   * Your program should not crash when supplied invalid input. Use
-     exception handling, as needed, to make the experience nicer
-     for the user. While we will explore creating popup windows
-     and dialogs in the future, it is sufficient to print a friendly
-     error message to standard output instead of letting the
-     program crash or display a stack trace.
-     
-1. Stage and commit your changes.
-
-1. If you completed the steps correctly, your app should not only look 
-   similar to the screenshot provided above, but it has the desired
-   functionality. Congratulations on a good looking, functional app!
         
 **CHECKPOINT**
 
