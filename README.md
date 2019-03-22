@@ -96,7 +96,7 @@ command depends on your present working directory), then please note that contex
 
 **CHECKPOINT**   
    
-1. Now, read the API documentation for the
+1. Now, read the class-level API documentation for the
    [`TilePane`](https://docs.oracle.com/javase/8/javafx/api/javafx/scene/layout/TilePane.html)
    class, then adapt your code to replace the highest `HBox` in the 
    containment hiearchy with a `TilePane` object.
@@ -136,7 +136,7 @@ command depends on your present working directory), then please note that contex
       
 **CHECKPOINT**
 
-1. Now, read the API documentation for the
+1. Now, read the class-level API documentation for the
    [`TabPane`](https://docs.oracle.com/javase/8/javafx/api/javafx/scene/control/TabPane.html)
    and [`Tab`](https://docs.oracle.com/javase/8/javafx/api/javafx/scene/control/Tab.html)
    classes, then adapt your code to replace the `TilePane` in the 
