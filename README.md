@@ -35,12 +35,13 @@ command depends on your present working directory), then please note that contex
 ### Exercise Steps
 
 1. Copy over your work from the `src/cs1302/gui` directory of `cs1302-components`
+   (from the [CSCI 1302 JavaFX Custom Component Tutorial](https://github.com/cs1302uga/cs1302-tutorials/blob/master/components/components.md))
    into the `src/cs1302/ce21` directory of `cs1302-ce21` and update the package
    statements accordingly (i.e., make sure the package is `cs1302.ce21`). 
    **You should create `src/cs1302/ce21` if it does not exist.**
    
 1. If you did not finish 
-   [CSCI 1302 JavaFX Custom Component Tutorial](https://github.com/cs1302uga/cs1302-tutorials/components/components.md), 
+   [CSCI 1302 JavaFX Custom Component Tutorial](https://github.com/cs1302uga/cs1302-tutorials/blob/master/components/components.md), 
    then finish that work in the code you just copied over. The end goal is to reduce
    the containment hierarchy from this:
    
