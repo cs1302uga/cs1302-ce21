@@ -6,6 +6,11 @@
 This class exercise explores creating custom JavaFX components by extending (inheriting from) existing
 JavaFX components. 
 
+## Course-Specific Learning Outcomes
+* **LO2.a:** Identify redundancy in a set of classes and interfaces, then refactor
+using inheritance and polymorphism to emphasize code reuse.
+* **LO7.a:** (Partial) Design and implement a graphical user interface in a software project.
+
 ## References and Prerequisites
 
 * [CSCI 1302 JavaFX 8 Bookmarks and Notes](http://cobweb.cs.uga.edu/~mec/cs1302/gui/)
