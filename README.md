@@ -136,8 +136,8 @@ command depends on your present working directory), then please note that contex
 1. Now, increase the number of `ImageLoader` objects to `8`. This
    should be easy if you used a loop.
    
-1. Tag your commit so that it's easier to checkout at a later
-   point in time:
+1. Commit these changes then tag your commit so that it's easier to checkout 
+   at a later point in time:
    
    ```
    $ git tag tilepane
