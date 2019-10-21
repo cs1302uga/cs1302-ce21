@@ -1,5 +1,7 @@
 # cs1302-ce21 Fun with Components and Containers
 
+![Approved for: Fall 2019](https://img.shields.io/badge/Approved%20for-Fall%202019-brightgreen)
+
 > Words, words, words.
 > **-- William Shakespeare, _Hamlet_**
 
@@ -47,8 +49,8 @@ command depends on your present working directory), then please note that contex
    
 1. If you did not finish 
    [CSCI 1302 JavaFX Custom Component Tutorial](https://github.com/cs1302uga/cs1302-tutorials/blob/master/components/components.md), 
-   then finish that work in the code you just copied over. The end goal is to reduce
-   the containment hierarchy from this:
+   then finish that work in the code you just copied over. **The end goal is to reduce
+   the containment hierarchy** from this:
    
    ```
                                                              --|
@@ -86,8 +88,9 @@ command depends on your present working directory), then please note that contex
           |--                                                --|
    ```
    
-1. **Compile and run your code without any errors or warnings.**
-   Also stage and commit your changes.
+1. **Compile and run your code without any errors or warnings,
+   make sure it passes a `checkstyle` audit, 
+   then stage and commit your changes.**
    
 1. Tag your commit so that it's easier to checkout at a later
    point in time:
@@ -130,8 +133,9 @@ command depends on your present working directory), then please note that contex
           |--                                                --|
    ```
    
-1. **Compile and run your code without any errors or warnings.**
-   Also stage and commit your changes.
+1. **Compile and run your code without any errors or warnings,
+   make sure it passes a `checkstyle` audit, 
+   then stage and commit your changes.**
    
 1. Now, increase the number of `ImageLoader` objects to `8`. This
    should be easy if you used a loop.
@@ -173,8 +177,9 @@ command depends on your present working directory), then please note that contex
           |--                                                --|
    ```
    
-1. **Compile and run your code without any errors or warnings.**
-   Also stage and commit your changes.
+1. **Compile and run your code without any errors or warnings,
+   make sure it passes a `checkstyle` audit, 
+   then stage and commit your changes.**
    
 1. Tag your commit so that it's easier to checkout at a later
    point in time:
