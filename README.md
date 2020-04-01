@@ -148,7 +148,7 @@ command depends on your present working directory), then please note that contex
    $ git tag tilepane
    ```
       
-![CP](https://img.shields.io/badge/Checkpoint-1-success?style=for-the-badge)
+![CP](https://img.shields.io/badge/Checkpoint-2-success?style=for-the-badge)
 
 1. Now, read the class-level API documentation for the
    [`TabPane`](https://docs.oracle.com/javase/8/javafx/api/javafx/scene/control/TabPane.html)
