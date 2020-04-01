@@ -1,10 +1,7 @@
 # cs1302-ce21 Fun with Components and Containers
 
-![Approved for: Fall 2019](https://img.shields.io/badge/Approved%20for-Fall%202019-brightgreen)
-<!--
 ![Approved for: Spring 2020](https://img.shields.io/badge/Approved%20for-Spring%202020-blue)
 ![Instruction: Online](https://img.shields.io/badge/Instruction-Online-important)
--->
 
 > Words, words, words.
 > **-- William Shakespeare, _Hamlet_**
@@ -107,7 +104,7 @@ command depends on your present working directory), then please note that contex
    to give the commit a more convenient name to a commit than its
    hexademical checksum.
 
-**CHECKPOINT**   
+![CP](https://img.shields.io/badge/Checkpoint-1-success?style=for-the-badge)   
    
 1. Now, read the class-level API documentation for the
    [`TilePane`](https://docs.oracle.com/javase/8/javafx/api/javafx/scene/layout/TilePane.html)
@@ -151,7 +148,7 @@ command depends on your present working directory), then please note that contex
    $ git tag tilepane
    ```
       
-**CHECKPOINT**
+![CP](https://img.shields.io/badge/Checkpoint-1-success?style=for-the-badge)
 
 1. Now, read the class-level API documentation for the
    [`TabPane`](https://docs.oracle.com/javase/8/javafx/api/javafx/scene/control/TabPane.html)
@@ -191,8 +188,6 @@ command depends on your present working directory), then please note that contex
    ```
    $ git tag tabpane
    ```
-   
-**CHECKPOINT**  
 
 1. View the condensed, graphical version of your Git log.
    Since you tagged each relevant commit with a name, you
@@ -206,8 +201,32 @@ command depends on your present working directory), then please note that contex
    
    Then, compile and run to see what your exercise looked like
    at that point in time!
+   
+1. Create a plain text file called `SUBMISSION.md` directly inside `cs1302-ce19`
+   with the following information:
 
-**NOT A CHECKPOINT**
+   1. Your name and UGA ID number;
+   1. Collaborator names, if any; and
+   1. The weekly code (listed with the exercise on eLC).
+   
+   Here is an example:
+   
+   ```
+   1. Sally Smith (811-000-999)
+   2. Collaborators: Joe Allen, Stacie Mack
+   3. Weekly Code: replace-with-actual-code
+   ```
+
+1. Add and commit `SUBMISSION.md`. Also, do a final check to ensure your code 
+   passes the `checkstyle` audit, then stage and commit all changes, if needed.
+
+1. Change into the parent directory and use the `submit` command to submit this exercise to `cs1302a`:
+   
+   ```
+   $ submit cs1302-ce19 cs1302a
+   ```
+   
+![CP](https://img.shields.io/badge/Checkpoint-Submission-success?style=for-the-badge)
 
 <hr/>
 
