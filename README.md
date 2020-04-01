@@ -201,9 +201,11 @@ command depends on your present working directory), then please note that contex
    
    Then, compile and run to see what your exercise looked like
    at that point in time!
-   
-1. Create a plain text file called `SUBMISSION.md` directly inside `cs1302-ce19`
-   with the following information:
+
+![CP](https://img.shields.io/badge/Checkpoint-3-success?style=for-the-badge)
+
+1. Create a plain text file called `SUBMISSION.md` directly inside this exercise
+   directory with the following information:
 
    1. Your name and UGA ID number;
    1. Collaborator names, if any; and
