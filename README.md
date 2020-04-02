@@ -204,6 +204,8 @@ command depends on your present working directory), then please note that contex
 
 ![CP](https://img.shields.io/badge/Checkpoint-3-success?style=for-the-badge)
 
+**Each student needs to individually submit their own work.**
+
 1. Create a plain text file called `SUBMISSION.md` directly inside this exercise
    directory with the following information:
 
@@ -225,7 +227,7 @@ command depends on your present working directory), then please note that contex
 1. Change into the parent directory and use the `submit` command to submit this exercise to `cs1302a`:
    
    ```
-   $ submit cs1302-ce19 cs1302a
+   $ submit cs1302-ce21 cs1302a
    ```
    
 ![CP](https://img.shields.io/badge/Checkpoint-Submission-success?style=for-the-badge)
