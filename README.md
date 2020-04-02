@@ -50,8 +50,8 @@ command depends on your present working directory), then please note that contex
    
 1. If you did not finish 
    [CSCI 1302 JavaFX Custom Component Tutorial](https://github.com/cs1302uga/cs1302-tutorials/blob/master/components/components.md), 
-   then finish that work in the code you just copied over. **By the end of the exercise, you will
-   reduce the containment hierarchy** from this:
+   then finish that work in the code you just copied over. Remember, in the custom
+   component tutorial, you used custom components to reduce the containment heirarchy from this:
    
    ```
                                                              --|
