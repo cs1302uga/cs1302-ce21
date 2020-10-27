@@ -22,10 +22,10 @@ using inheritance and polymorphism to emphasize code reuse.
 
 The following video contains a brief introduction to the exercise and a demo: 
 
-https://www.youtube.com/watch?v=eMArlI_tjig
+https://www.youtube.com/watch?v=CtDU9aivPOE
 
-<a href="https://www.youtube.com/watch?v=eMArlI_tjig">
-<img src="http://i3.ytimg.com/vi/eMArlI_tjig/hqdefault.jpg" alt="IMAGE ALT TEXT">
+<a href="https://www.youtube.com/watch?v=CtDU9aivPOE">
+<img src="http://i3.ytimg.com/vi/CtDU9aivPOE/hqdefault.jpg" alt="IMAGE ALT TEXT">
 </a>
 
 ## Questions
