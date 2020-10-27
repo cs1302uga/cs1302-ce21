@@ -49,7 +49,9 @@ command depends on your present working directory), then please note that contex
    pretty much nothing there! That's intentional. Continue on to the 
    [Exercise Steps](#exercise-steps) below.
    
-### Exercise Steps
+## Exercise Steps
+
+### Checkpoint 1 Steps
 
 1. Copy over your work from the `src/cs1302/gui` directory of `cs1302-components`
    (from the [CSCI 1302 JavaFX Custom Component Tutorial](https://github.com/cs1302uga/cs1302-tutorials/blob/master/components/components.md))
@@ -113,8 +115,14 @@ command depends on your present working directory), then please note that contex
    to give the commit a more convenient name to a commit than its
    hexademical checksum.
 
-![CP](https://img.shields.io/badge/Checkpoint-1-success?style=for-the-badge)   
-   
+<hr/>
+
+![CP](https://img.shields.io/badge/Just%20Finished%20Checkpoint-1-success?style=for-the-badge)
+
+<hr/>
+
+### Checkpoint 2 Steps
+
 1. Now, read the class-level API documentation for the
    [`TilePane`](https://openjfx.io/javadoc/11/javafx.graphics/javafx/scene/layout/TilePane.html)
    class, then adapt your code to replace the highest `HBox` in the 
@@ -211,35 +219,51 @@ command depends on your present working directory), then please note that contex
    Then, compile and run to see what your exercise looked like
    at that point in time!
 
-![CP](https://img.shields.io/badge/Checkpoint-3-success?style=for-the-badge)
+<hr/>
+
+![CP](https://img.shields.io/badge/Just%20Finished%20Checkpoint-2-success?style=for-the-badge)
+
+<hr/>
+
+### Submission Steps
 
 **Each student needs to individually submit their own work.**
 
-1. Create a plain text file called `SUBMISSION.md` directly inside this exercise
-   directory with the following information:
+1. Create a plain text file called `SUBMISSION.md` directly inside the `cs1302-ce21`
+   directory with the following information.
 
    1. Your name and UGA ID number;
    1. Collaborator names, if any; and
-   1. The weekly code (listed with the exercise on eLC).
+   1. If you created the API website, include the full link to the site you generated.
    
-   Here is an example:
+   Here is an example of the contents of `SUBMISSION.md`.
    
    ```
    1. Sally Smith (811-000-999)
    2. Collaborators: Joe Allen, Stacie Mack
-   3. Weekly Code: replace-with-actual-code
+   3. https://webwork.cs.uga.edu/~user/cs1302-ce21-doc
    ```
 
-1. Add and commit `SUBMISSION.md`. Also, do a final check to ensure your code 
-   passes the `checkstyle` audit, then stage and commit all changes, if needed.
+1. Change directories to the parent of `cs1302-ce21` (e.g., `cd ..` from `cs1302-ce21`). If you would like
+   to make a backup tar file, the instructions are in the submissions steps for [ce02](https://github.com/cs1302uga/cs1302-ce02).
+   We won't repeat those steps here and you can view them as optional.
+   
+1. Use the `submit` command to submit this exercise to `csci-1302`:
+   
+   ```
+   $ submit cs1302-ce21 csci-1302
+   ```
+   
+   Read the output of the submit command very carefully. If there is an error while submitting, then it will displayed 
+   in that output. Additionally, if successful, the submit command creates a new receipt file in the directory you 
+   submitted. The receipt file begins with rec and contains a detailed list of all files that were successfully submitted. 
+   Look through the contents of the rec file and always remember to keep that file in case there is an issue with your submission.
 
-1. Change into the parent directory and use the `submit` command to submit this exercise to `cs1302a`:
-   
-   ```
-   $ submit cs1302-ce21 cs1302a
-   ```
-   
-![CP](https://img.shields.io/badge/Checkpoint-Submission-success?style=for-the-badge)
+   **Note:** You must be on Odin to submit.
+
+<hr/>
+
+![CP](https://img.shields.io/badge/Just%20Finished-Submission-success?style=for-the-badge)
 
 <hr/>
 
