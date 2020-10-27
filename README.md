@@ -1,7 +1,6 @@
 # cs1302-ce21 Fun with Components and Containers
 
-![Approved for: Spring 2020](https://img.shields.io/badge/Approved%20for-Spring%202020-blue)
-![Instruction: Online](https://img.shields.io/badge/Instruction-Online-important)
+![Approved for: Fall 2020](https://img.shields.io/badge/Approved%20for-Fall%202020-blueviolet)
 
 > Words, words, words.
 > **-- William Shakespeare, _Hamlet_**
@@ -16,13 +15,23 @@ using inheritance and polymorphism to emphasize code reuse.
 
 ## References and Prerequisites
 
-* [CSCI 1302 JavaFX 8 Bookmarks and Notes](http://cobweb.cs.uga.edu/~mec/cs1302/gui/)
+* [JavaFX 11 Bookmarks](https://github.com/cs1302uga/cs1302-tutorials/blob/master/javafx/javafx-bookmarks.md)
 * [CSCI 1302 JavaFX Custom Component Tutorial](https://github.com/cs1302uga/cs1302-tutorials/blob/master/components/components.md)
+
+## Introductory Video
+
+The following video contains a brief introduction to the exercise and a demo: 
+
+https://www.youtube.com/watch?v=eMArlI_tjig
+
+<a href="https://www.youtube.com/watch?v=eMArlI_tjig">
+<img src="http://i3.ytimg.com/vi/eMArlI_tjig/hqdefault.jpg" alt="IMAGE ALT TEXT">
+</a>
 
 ## Questions
 
 In your notes, clearly answer the following questions. These instructions assume that you are 
-logged into the Nike server. 
+logged into the Odin server. 
 
 **NOTE:** If a step requires you to enter in a command, please provide in your notes the full 
 command that you typed to make the related action happen. If context is necessary (e.g., the 
@@ -30,7 +39,7 @@ command depends on your present working directory), then please note that contex
 
 ### Getting Started
 
-1. Use Git to clone the repository for this exercise onto Nike into a subdirectory called `cs1302-ce21`:
+1. Use Git to clone the repository for this exercise onto Odin into a subdirectory called `cs1302-ce21`:
 
    ```
    $ git clone --depth 1 https://github.com/cs1302uga/cs1302-ce21.git
@@ -107,7 +116,7 @@ command depends on your present working directory), then please note that contex
 ![CP](https://img.shields.io/badge/Checkpoint-1-success?style=for-the-badge)   
    
 1. Now, read the class-level API documentation for the
-   [`TilePane`](https://docs.oracle.com/javase/8/javafx/api/javafx/scene/layout/TilePane.html)
+   [`TilePane`](https://openjfx.io/javadoc/11/javafx.graphics/javafx/scene/layout/TilePane.html)
    class, then adapt your code to replace the highest `HBox` in the 
    containment hiearchy with a `TilePane` object.
    
@@ -151,8 +160,8 @@ command depends on your present working directory), then please note that contex
 ![CP](https://img.shields.io/badge/Checkpoint-2-success?style=for-the-badge)
 
 1. Now, read the class-level API documentation for the
-   [`TabPane`](https://docs.oracle.com/javase/8/javafx/api/javafx/scene/control/TabPane.html)
-   and [`Tab`](https://docs.oracle.com/javase/8/javafx/api/javafx/scene/control/Tab.html)
+   [`TabPane`](https://openjfx.io/javadoc/11/javafx.controls/javafx/scene/control/TabPane.html)
+   and [`Tab`](https://openjfx.io/javadoc/11/javafx.controls/javafx/scene/control/Tab.html)
    classes, then adapt your code to replace the `TilePane` in the 
    containment hiearchy with a `TabPane` object.
     
