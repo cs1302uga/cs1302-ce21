@@ -165,7 +165,13 @@ command depends on your present working directory), then please note that contex
    $ git tag tilepane
    ```
       
-![CP](https://img.shields.io/badge/Checkpoint-2-success?style=for-the-badge)
+<hr/>
+
+![CP](https://img.shields.io/badge/Just%20Finished%20Checkpoint-2-success?style=for-the-badge)
+
+<hr/>
+
+### Checkpoint 3 Steps
 
 1. Now, read the class-level API documentation for the
    [`TabPane`](https://openjfx.io/javadoc/11/javafx.controls/javafx/scene/control/TabPane.html)
@@ -221,7 +227,7 @@ command depends on your present working directory), then please note that contex
 
 <hr/>
 
-![CP](https://img.shields.io/badge/Just%20Finished%20Checkpoint-2-success?style=for-the-badge)
+![CP](https://img.shields.io/badge/Just%20Finished%20Checkpoint-3-success?style=for-the-badge)
 
 <hr/>
 
